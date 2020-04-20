@@ -1,0 +1,4 @@
+<launch>
+    <node name="rosbag_record_davis" pkg="rosbag" type="record" args="-o /home/tobias/rosbags/dvs_vpr /dvs/camera_info /dvs/events /dvs/image_raw /dvs/imu" />
+</launch>
+

@@ -1,6 +1,10 @@
 <launch>
   <!-- camera driver -->
-  <node name="davis_ros_driver" pkg="davis_ros_driver" type="davis_ros_driver" />
+  <node name="davis_ros_driver" pkg="davis_ros_driver" type="davis_ros_driver" output="screen">
+    <param name="autoexposure_enabled" value="true"/>
+    <param name="PrBp_coarse" value="3"/>
+    <param name="PrBp_fine" value="0"/>
+  </node>
 
   <!-- visualization -->
   <node name="dvs_renderer" pkg="dvs_renderer" type="dvs_renderer">
